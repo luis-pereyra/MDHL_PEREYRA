@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+}
+
+header{
+    display: inline-block;
+    position: relative;
+}
+
+header img{
+    width: 100%;
+}
+
+header h1{
+    position: absolute;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+header h2{
+    position: relative;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+.logo{
+    position: absolute;
+    width: 100px;
+    top: 93%;
+    right: 10%;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+
+nav{
+    float: left;
+}
+
+.menu-vertical{
+    width: 10%;
+    padding: 10px;
+}
+
+.menu-vertical a {
+    position: relative;
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.menu-vertical a:hover {
+    background-color: #ccc;
+}
+  
+.menu-vertical a.activo {
+    background-color: steelblue;
+    color: white;
+}
+
+section{
+    margin-top: 50px;
+}
+
+article{
+    width: 85%;
+    padding: 5px;
+    float: right;
+}
+
+main section article h3{
+    padding-left: 10px;
+    color: white;
+    background-color: steelblue;
+}
+
+main section article p{
+    padding-left: 20px;
+    border: 1px;
+    border-style: solid;
+}

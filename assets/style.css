@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    display: block;
+}
+
+header{
+    text-align: center;
+    position: relative;
+}
+
+header h1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
