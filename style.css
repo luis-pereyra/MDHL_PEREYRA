@@ -1,87 +1,183 @@
 *{
     margin: 0;
+    padding: 0;
 }
 
-header{
-    display: inline-block;
-    position: relative;
+.wrap{
+    /*
+    width: 100vw;
+    */
+    height: 80vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    background: linear-gradient(to bottom, rgb(0 0 0 / .5), rgb(0 0 0 / .5)), url(./assets/Banner1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.wrap-texto{
+    color: yellow;
+    text-align: left;
+    width: 100%;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 40px;
+    letter-spacing: 0;
+    text-shadow: -3px -3px 3px #0000DF, 3px -3px 3px #0000DF, -3px 3px 3px #0000DF, 3px 3px 3px #0000DF;
 }
 
 header img{
-    width: 100%;
-}
-
-header h1{
-    position: absolute;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-header h2{
-    position: relative;
-    text-align: center;
-    color: white;
-    background-color: black;
-}
-
-.logo{
-    position: absolute;
+    height: 100px;
     width: 100px;
-    top: 93%;
-    right: 10%;
-    background-color: rgba(0, 0, 0, 1);
+    align-self: flex-end;
 }
 
+h2 {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-image: linear-gradient(
+        to right,
+        orangered,
+        orange,
+        gold,
+        lightgreen,
+        cyan,
+        dodgerblue,
+        mediumpurple,
+        hotpink,
+        orangered);
+    background-size: 110vw;
+    animation: sliding 30s linear infinite;
+}
+ 
+@keyframes sliding {
+    to {
+        background-position: -2000vw;
+    }
+}
 
 nav{
-    float: left;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
 }
 
 .menu-vertical{
-    width: 10%;
+    width: 15%;
     padding: 10px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-transform: uppercase;
 }
 
 .menu-vertical a {
     position: relative;
-    background-color: #eee;
-    color: black;
-    display: block;
-    padding: 12px;
+    background-color: bisque;
+    color: forestgreen;
+    border: 3px solid forestgreen;
+    padding: 24px;
     text-decoration: none;
+    text-align: center;
+    border-radius: 15px;
 }
 
 .menu-vertical a:hover {
-    background-color: #ccc;
+    background-color: slateblue;
+    color: aquamarine;
+    border: 3px solid aquamarine;
 }
   
 .menu-vertical a.activo {
     background-color: steelblue;
-    color: white;
+    color: yellow;
+    border: 5px solid yellow;
 }
 
-section{
-    margin-top: 50px;
+.horizontal{
+    display: flex;
 }
 
-article{
+.horizontal img{
+    width: 25vw;
+    margin: 10px;
+    border: 3px solid forestgreen;
+    border-radius: 15px;
+}
+
+.horizontal section{
+    border: 1px solid black; /*--- SACAR ESTE BORDER CUANDO TERMINES ---*/
+    padding: 10px;
+    margin: 10px;
+    background-color: bisque;
+    border-radius: 15px;
     width: 85%;
-    padding: 5px;
-    float: right;
 }
 
-main section article h3{
-    padding-left: 10px;
-    color: white;
+.horizontal section article{
+    display: flex;
+    gap: 10px;
+}
+
+.horizontal section h3{
+    color: brown;
+    padding: 10px;
+/*    border: 1px solid black; /*--- SACAR ESTE BORDER CUANDO TERMINES ---*/
+    width: 15%;
+    margin: 5px;
+    border-left: 5px solid red;
+}
+
+.horizontal section p{
+    padding: 10px;
+/*    border: 1px solid black; /*--- SACAR ESTE BORDER CUANDO TERMINES ---*/
+    width: 85%;
+    margin: 5px;
+    border-left: 5px solid blue;
+    background-color: rgb(0 0 0 / .2);
+}
+
+footer{
+    display: flex;
     background-color: steelblue;
+    border: 3px solid yellow;
+    border-radius: 15px;
+    margin: 20px;
+    padding: 20px;
+    color: yellow;
+    font-size: 20px;
+    justify-content: center;
 }
 
-main section article p{
-    padding-left: 20px;
-    border: 1px;
-    border-style: solid;
+.vertical{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
 }
 
-main > ol > li {
-    list-style-position: outside;
+table{
+    width: 87.5%;
+    margin: 5px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+th{
+    color: brown;
+    background-color: rgb(0 0 0 / .2);
+}
+
+ol, ul, li{
+    padding: 10px;
+}
+
+h6{
+    display: none;
 }
