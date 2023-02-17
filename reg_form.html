@@ -13,35 +13,33 @@
         <h1 class="wrap-texto">Mighty Ducks Hockey League</h1>
         <img src="./assets/Logo.png" alt="">
     </header>
-    <h2>Upcoming Events</h2>
+    <h2>Registration Form</h2>
     <div class="horizontal">
         <nav class="menu-vertical">
-            <a href="#" class="activo">Home</a>
+            <a href="./index.html">Home</a>
             <a href="./about.html">About MDHL</a>
             <a href="./contact.html">Contact</a>
             <a href="./game_info.html">Game Info</a>
             <a href="./rules.html">Rules</a>
-            <a href="./reg_form.html">Registration Form</a>
+            <a href="#" class="activo">Registration Form</a>
         </nav>
         <section>
-            <h6>Upcoming Events</h6>
-            <article>
-                <h3>August 4</h3>
-                <p>MDSL Fundraiser</p>
-            </article>
-            <article>
-                <h3>August 16</h3>
-                <p>Season Kick-off: Meet the Teams</p>
-            </article>
-            <article>
-                <h3>September 1</h3>
-                <p>First Game of the Season (Check Game Schedule for details)</p>
-            </article>
-            <div class="horizontal">
-                <img src="./assets/imagen1.png" alt="">
-                <img src="./assets/imagen2.png" alt="">
-                <img src="./assets/imagen3.png" alt="">
-            </div>
+            <h6>Registration form</h6>
+            <form action="./show_data.html">
+                <fieldset>
+                    <label for="fn">Player's First Name:</label>
+                    <input type="text" name="FirstName" id="fn">
+                    <label for="ln">Last Name:</label>
+                    <input type="text" name="LastName" id="ln">
+                    <label for="addr">Street Address:</label>
+                    <input type="text" name="Address" id="addr">
+                    <label for="city">City:</label>
+                    <input type="text" name="City" id="city">
+                    <label for="zip">Zip Code:</label>
+                    <input type="text" name="Zip" id="zip">
+
+                </fieldset>
+            </form>
         </section>
     </div>
     <footer>
